@@ -5,6 +5,24 @@
     ],
     "plugins": ["stylelint-order"],
     "rules": {
-        "order/properties-alphabetical-order": true
+        "order/properties-order": [
+            [
+                "position",
+                "top",
+                "right",
+                "bottom",
+                "left",
+                "display",
+                "width",
+                "height",
+                "margin",
+                "padding",
+                "color",
+                "font-size"
+            ],
+            {
+                "unspecified": "bottom"
+            }
+        ]
     }
 }
