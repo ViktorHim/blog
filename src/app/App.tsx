@@ -1,14 +1,13 @@
 import './styles/index.scss';
-import { UseTheme } from './providers/ThemeProvider';
+import { UseTheme } from '@/app/providers/ThemeProvider';
+import { classNames } from '@/shared/lib/classNames/classNames';
 
 export const App = () => {
     const { theme, toggleTheme } = UseTheme();
 
     return (
-        <div className={`app ${theme}`}>
+        <div className={classNames('app', [theme])}>
             <button onClick={toggleTheme}>ggg</button>
         </div>
     );
 };
-
-export default App;
