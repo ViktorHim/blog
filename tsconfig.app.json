@@ -22,7 +22,10 @@
 
         "baseUrl": "./",
         "paths": {
-            "@/*": ["src/*"]
+            "@/*": ["src/*"],
+            "@images/*": ["src/shared/assets/images/*"],
+            "@icons/*": ["src/shared/assets/icons/*"],
+            "@uikit/*": ["src/shared/uikit/*"]
         }
     },
     "include": ["src"]

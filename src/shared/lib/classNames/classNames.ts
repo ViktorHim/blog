@@ -1,13 +1,13 @@
-export type ModeType = Record<string, boolean | string>;
+export type ModeType = Record<string, boolean | undefined>;
 
 // convert args to classNames string
 export function classNames(
-    mainClass: string,
+    mainClass?: string,
     additionalClasses: (string | undefined)[] = [],
     mods: ModeType = {},
 ): string {
     return [
-        mainClass,
+        mainClass ?? '',
         ...additionalClasses.filter(className => Boolean(className)),
         ...Object.entries(mods)
             .filter(([_, value]) => Boolean(value))

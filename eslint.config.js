@@ -6,6 +6,7 @@ import react from 'eslint-plugin-react';
 import tseslint from 'typescript-eslint';
 import eslintPluginPrettier from 'eslint-plugin-prettier';
 import eslintConfigPrettier from 'eslint-config-prettier';
+import simpleSort from 'eslint-plugin-simple-import-sort';
 
 export default tseslint.config(
     { ignores: ['dist'] },
@@ -21,17 +22,33 @@ export default tseslint.config(
             'react-refresh': reactRefresh,
             prettier: eslintPluginPrettier,
             react,
+            'simple-import-sort': simpleSort,
         },
         rules: {
+            ...reactHooks.configs.recommended.rules,
+            ...react.configs.recommended.rules,
+            ...react.configs['jsx-runtime'].rules,
             ...eslintPluginPrettier.configs.recommended.rules,
             ...eslintConfigPrettier.rules,
-            ...reactHooks.configs.recommended.rules,
             'react-refresh/only-export-components': [
                 'warn',
                 { allowConstantExport: true },
             ],
-            ...react.configs.recommended.rules,
-            ...react.configs['jsx-runtime'].rules,
+            '@typescript-eslint/no-unused-vars': [
+                'warn',
+                {
+                    args: 'all',
+                    argsIgnorePattern: '^_',
+                    caughtErrors: 'all',
+                    caughtErrorsIgnorePattern: '^_',
+                    destructuredArrayIgnorePattern: '^_',
+                    varsIgnorePattern: '^_',
+                    ignoreRestSiblings: true,
+                },
+            ],
+
+            'simple-import-sort/imports': 'error',
+            'simple-import-sort/exports': 'error',
         },
     },
 );
