@@ -7,7 +7,7 @@ interface UseThemeResult {
     theme: Theme;
 }
 
-export const UseTheme = (): UseThemeResult => {
+export const useTheme = (): UseThemeResult => {
     const { theme, setTheme } = useContext(ThemeContext);
 
     if (!theme || !setTheme) {

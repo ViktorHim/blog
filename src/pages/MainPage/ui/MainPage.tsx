@@ -1,5 +1,11 @@
+import { Title } from '@uikit/Title';
+
 const MainPage = () => {
-    return <main className="page">Main page</main>;
+    return (
+        <section className="page">
+            <Title level={1}>Main page</Title>
+        </section>
+    );
 };
 
 export default MainPage;

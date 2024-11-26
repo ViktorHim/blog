@@ -3,7 +3,7 @@ import Light from '@icons/theme-light.svg';
 import { Button } from '@uikit/Button';
 import { ButtonTheme } from '@uikit/Button';
 
-import { UseTheme } from '@/app/providers/ThemeProvider';
+import { useTheme } from '@/app/providers/ThemeProvider';
 import { Theme } from '@/app/providers/ThemeProvider/lib/ThemeContext';
 
 interface ThemeSwitcherProps {
@@ -11,7 +11,7 @@ interface ThemeSwitcherProps {
 }
 
 export const ThemeSwitcher = ({ className }: ThemeSwitcherProps) => {
-    const { theme, toggleTheme } = UseTheme();
+    const { theme, toggleTheme } = useTheme();
     return (
         <Button
             className={className}

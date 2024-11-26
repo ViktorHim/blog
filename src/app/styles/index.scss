@@ -11,5 +11,11 @@
 }
 
 .page {
-    min-height: calc(100vh - var(--havbar-height));
+    padding: 20px;
+    min-height: var(--content-height);
+    flex-grow: 1;
+}
+
+.content {
+    display: flex;
 }
