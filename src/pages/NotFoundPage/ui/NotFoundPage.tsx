@@ -13,7 +13,9 @@ const NotFoundPage = ({ className }: NotFoundPageProps) => {
     const { t } = useTranslation();
 
     return (
-        <section className={classNames('page', [classes.NotFoundPage])}>
+        <section
+            className={classNames('page', [classes.NotFoundPage, className])}
+        >
             <Title level={1}>{t('Page not found')}</Title>
         </section>
     );

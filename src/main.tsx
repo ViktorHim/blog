@@ -6,12 +6,16 @@ import { BrowserRouter } from 'react-router-dom';
 import { App } from '@/app/App';
 import { ThemeProvider } from '@/app/providers/ThemeProvider';
 
+import { ErrorBoundary } from './app/providers/ErrorBoundary';
+
 createRoot(document.getElementById('root')!).render(
-    <BrowserRouter>
-        <ThemeProvider>
-            <App />
-        </ThemeProvider>
-    </BrowserRouter>,
+    <ErrorBoundary>
+        <BrowserRouter>
+            <ThemeProvider>
+                <App />
+            </ThemeProvider>
+        </BrowserRouter>
+    </ErrorBoundary>,
 );
 
 //TODO
@@ -21,3 +25,4 @@ createRoot(document.getElementById('root')!).render(
 
 // TODO later
 // Loaders
+// Page Error
