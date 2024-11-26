@@ -25,5 +25,3 @@ export const App = () => {
         </div>
     );
 };
-
-//TODO: sidebar, i18n, jest

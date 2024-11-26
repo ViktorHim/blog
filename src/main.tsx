@@ -13,3 +13,11 @@ createRoot(document.getElementById('root')!).render(
         </ThemeProvider>
     </BrowserRouter>,
 );
+
+//TODO
+
+// refactor:
+// styles for title
+
+// TODO later
+// Loaders

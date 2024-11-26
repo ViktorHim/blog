@@ -2,17 +2,18 @@ import { Navigate, RouteProps } from 'react-router-dom';
 
 import { AboutPage } from '@/pages/AboutPage';
 import { MainPage } from '@/pages/MainPage';
+import { NotFoundPage } from '@/pages/NotFoundPage';
 
 export enum AppRoutes {
     MAIN = 'main',
     ABOUT = 'about',
-    DEFAULT = 'default',
+    NOT_FOUND = 'not_found',
 }
 
 export const routePath: Record<AppRoutes, string> = {
     [AppRoutes.MAIN]: '/',
     [AppRoutes.ABOUT]: '/about',
-    [AppRoutes.DEFAULT]: '*',
+    [AppRoutes.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<AppRoutes, RouteProps> = {
@@ -24,8 +25,8 @@ export const routeConfig: Record<AppRoutes, RouteProps> = {
         path: routePath.about,
         element: <AboutPage />,
     },
-    [AppRoutes.DEFAULT]: {
-        path: routePath.default,
-        element: <Navigate to={routePath.main} />,
+    [AppRoutes.NOT_FOUND]: {
+        path: routePath.not_found,
+        element: <NotFoundPage />,
     },
 };
