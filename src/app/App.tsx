@@ -1,4 +1,7 @@
 import '@/app/styles/index.scss';
+import '@/shared/consts/i18n/i18n.ts';
+
+import { Suspense } from 'react';
 
 import { useTheme } from '@/app/providers/ThemeProvider';
 import { classNames } from '@/shared/lib/classNames/classNames';
@@ -12,11 +15,13 @@ export const App = () => {
 
     return (
         <div className={classNames('app', [theme])}>
-            <Navbar />
-            <main className="content">
-                <Sidebar />
-                <AppRouter />
-            </main>
+            <Suspense fallback="">
+                <Navbar />
+                <main className="content">
+                    <Sidebar />
+                    <AppRouter />
+                </main>
+            </Suspense>
         </div>
     );
 };

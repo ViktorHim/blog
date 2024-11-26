@@ -6,4 +6,8 @@
     align-items: center;
     justify-content: end;
     background-color: var(--inverted-bg-color);
+
+    & > a {
+        margin: 10px;
+    }
 }

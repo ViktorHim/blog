@@ -1,5 +1,14 @@
+import { Title } from '@uikit/Title';
+import { useTranslation } from 'react-i18next';
+
 const AboutPage = () => {
-    return <section className="page">About page</section>;
+    const { t } = useTranslation();
+
+    return (
+        <section className="page">
+            <Title>{t('About page')}</Title>
+        </section>
+    );
 };
 
 export default AboutPage;

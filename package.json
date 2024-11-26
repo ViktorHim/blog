@@ -14,8 +14,12 @@
     },
     "dependencies": {
         "blog": "file:",
+        "i18next": "^24.0.2",
+        "i18next-browser-languagedetector": "^8.0.0",
+        "i18next-http-backend": "^3.0.1",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
+        "react-i18next": "^15.1.1",
         "react-router-dom": "^6.27.0",
         "sass": "^1.80.3"
     },
@@ -49,8 +53,8 @@
     },
     "lint-staged": {
         "src/**/*.{ts,tsx,js,jsx}": [
-            "eslint --fix",
-            "prettier --write"
+            "eslint --fix .",
+            "prettier --write ."
         ],
         "src/**/*.{css,scss,sass}": [
             "stylelint --fix",
