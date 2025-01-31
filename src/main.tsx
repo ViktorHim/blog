@@ -19,10 +19,11 @@ createRoot(document.getElementById('root')!).render(
 );
 
 //TODO
-
 // refactor:
 // styles for title
 
 // TODO later
 // Loaders
 // Page Error
+
+//move configs to another folder

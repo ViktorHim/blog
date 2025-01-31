@@ -1,7 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 
-import { AppRoutes, routePath } from '@/shared/consts/routes/routeConfig';
+import { AppRoutes, routePath } from '@/shared/config/routes/routeConfig';
 import { classNames } from '@/shared/lib/classNames/classNames';
 
 import classes from './Navbar.module.scss';

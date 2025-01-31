@@ -29,6 +29,7 @@ export const Button = (props: ButtonProps) => {
 
     return (
         <button
+            type="button"
             className={classNames(classes.Button, [classes[theme], className], {
                 disabled,
             })}

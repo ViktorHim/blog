@@ -4,19 +4,24 @@ import { pathsToModuleNameMapper } from 'ts-jest';
 const config: Config = {
     preset: 'ts-jest',
     testEnvironment: 'jsdom',
-    globals: {
-        'ts-jest': {
-            tsconfig: 'tsconfig.app.json',
-        },
+    rootDir: '../../',
+    transform: {
+        '^.+\\.(ts|tsx)$': [
+            'ts-jest',
+            {
+                tsconfig: '<rootDir>/tsconfig.app.json',
+            },
+        ],
+        '^.+\\.svg$': 'jest-transformer-svg',
     },
     clearMocks: true,
-    setupFilesAfterEnv: ['<rootDir>/jest-setup.ts'],
+    setupFilesAfterEnv: ['<rootDir>/config/jest/jest-setup.ts'],
     testMatch: ['<rootDir>src/**/*.test.[tj]s?(x)'],
     coveragePathIgnorePatterns: ['\\\\node_modules\\\\'],
     // An array of directory names to be searched recursively up from the requiring module's location
     moduleDirectories: ['node_modules'],
 
-    //modulePaths: ['<rootDir>src'],
+    modulePaths: ['<rootDir>src'],
     //An array of file extensions your modules use
     moduleFileExtensions: [
         'js',

@@ -1,5 +1,5 @@
 import '@/app/styles/index.scss';
-import '@/shared/consts/i18n/i18n.ts';
+import '@/shared/config/i18n/i18n';
 
 import { Suspense } from 'react';
 
