@@ -13,12 +13,14 @@
         "moduleDetection": "force",
         "noEmit": true,
         "jsx": "react-jsx",
+        "esModuleInterop": true,
 
         /* Linting */
         "strict": true,
         "noUnusedLocals": true,
         "noUnusedParameters": true,
         "noFallthroughCasesInSwitch": true,
+        "resolveJsonModule": true,
 
         "baseUrl": "./",
         "paths": {
@@ -28,5 +30,5 @@
             "@uikit/*": ["src/shared/uikit/*"]
         }
     },
-    "include": ["src"]
+    "include": ["src", "./jest-setup.ts"]
 }
