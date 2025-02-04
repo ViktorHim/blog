@@ -17,5 +17,6 @@ createRoot(document.getElementById('root')!).render(
 );
 
 //TODO
-// refactor:
-// styles for title
+
+//add later:
+//translation toggle for storybook

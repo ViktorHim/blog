@@ -1,5 +1,5 @@
 import { classNames } from '@shared/lib/classNames/classNames';
-import { Title } from '@uikit/Title';
+import { Title } from '@shared/uikit/Title';
 import { useTranslation } from 'react-i18next';
 
 import classes from './NotFoundPage.module.scss';

@@ -1,4 +1,4 @@
-import { Title } from '@uikit/Title';
+import { Title } from '@shared/uikit/Title';
 import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
