@@ -1,10 +1,9 @@
+import { useTheme } from '@app/providers/ThemeProvider';
+import { Theme } from '@app/providers/ThemeProvider/lib/ThemeContext';
 import Dark from '@icons/theme-dark.svg';
 import Light from '@icons/theme-light.svg';
 import { Button } from '@uikit/Button';
 import { ButtonTheme } from '@uikit/Button';
-
-import { useTheme } from '@/app/providers/ThemeProvider';
-import { Theme } from '@/app/providers/ThemeProvider/lib/ThemeContext';
 
 interface ThemeSwitcherProps {
     className?: string;

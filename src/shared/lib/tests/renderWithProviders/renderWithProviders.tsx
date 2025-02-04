@@ -1,9 +1,8 @@
+import { ThemeProvider } from '@app/providers/ThemeProvider';
+import i18nForTest from '@shared/config/i18n/i18nForTests';
 import { render } from '@testing-library/react';
 import { ReactNode } from 'react';
 import { I18nextProvider } from 'react-i18next';
-
-import { ThemeProvider } from '@/app/providers/ThemeProvider';
-import i18nForTest from '@/shared/config/i18n/i18nForTests';
 
 export function renderWithProviders(component: ReactNode) {
     return render(

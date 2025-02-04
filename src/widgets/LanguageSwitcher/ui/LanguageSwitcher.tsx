@@ -1,6 +1,5 @@
+import { Button, ButtonTheme } from '@shared/uikit/Button';
 import { useTranslation } from 'react-i18next';
-
-import { Button, ButtonTheme } from '@/shared/uikit/Button';
 
 interface LanguageSwitcherProps {
     className?: string;

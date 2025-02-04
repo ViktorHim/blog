@@ -1,6 +1,5 @@
+import { classNames } from '@shared/lib/classNames/classNames';
 import { ReactNode } from 'react';
-
-import { classNames } from '@/shared/lib/classNames/classNames';
 
 export type HeadingLevel = 1 | 2 | 3 | 4 | 5 | 6;
 

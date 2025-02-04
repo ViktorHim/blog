@@ -1,6 +1,5 @@
+import { classNames } from '@shared/lib/classNames/classNames';
 import { ButtonHTMLAttributes, ReactNode } from 'react';
-
-import { classNames } from '@/shared/lib/classNames/classNames';
 
 import classes from './Button.module.scss';
 
