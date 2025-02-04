@@ -1,6 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-import svgr from 'vite-plugin-svgr';
 import path from 'path';
+import svgr from 'vite-plugin-svgr';
 
 const config: StorybookConfig = {
     async viteFinal(config) {

@@ -19,6 +19,3 @@ createRoot(document.getElementById('root')!).render(
 //TODO
 // refactor:
 // styles for title
-
-// TODO later
-// Page Error

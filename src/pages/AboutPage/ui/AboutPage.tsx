@@ -1,5 +1,5 @@
-import { Title } from '@uikit/Title';
 import { useTranslation } from 'react-i18next';
+import { Title } from 'src/shared/uikit/Title';
 
 const AboutPage = () => {
     const { t } = useTranslation();
