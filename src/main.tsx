@@ -12,7 +12,6 @@ createRoot(document.getElementById("root")!).render(
 );
 
 // todo
-// absolute imports
 
 // todo later
 // i18n
