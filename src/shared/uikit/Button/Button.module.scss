@@ -1,12 +1,12 @@
 .Button {
   cursor: pointer;
   border-radius: var(--border-r);
+  font: var(--font-m);
 }
 
 .clear {
   outline: none;
   border: none;
   padding: 0;
-  margin: 0;
   background: none;
 }

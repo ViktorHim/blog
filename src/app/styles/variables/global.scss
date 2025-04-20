@@ -1,4 +1,5 @@
 :root {
+  // font
   --font-family-main: Consolas, "Courier New", monospace;
 
   --font-size-m: 16px;
@@ -10,7 +11,12 @@
   --font-m: var(--font-size-m) / var(--font-line-m) var(--font-family-main);
   --font-l: var(--font-size-l) / var(--font-line-l) var(--font-family-main);
 
+  // sizes
   --navbar-h: 50px;
+  --with-out-navbar-h: calc(100vh - var(--navbar-h));
 
   --border-r: 5px;
+
+  --sidebar-w: 300px;
+  --sidebar-collapsed-w: 100px;
 }
