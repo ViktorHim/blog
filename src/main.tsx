@@ -14,4 +14,6 @@ createRoot(document.getElementById("root")!).render(
 // todo
 
 // todo later
+// configure linters and formatters
+// configure husky
 // i18n
