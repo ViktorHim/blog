@@ -1,19 +1,18 @@
-import { createRoot } from "react-dom/client";
-import { App } from "./app/App.tsx";
-import { BrowserRouter } from "react-router-dom";
-import { ThemeProvider } from "./app/providers/ThemeProvider";
+import { createRoot } from 'react-dom/client';
+import { App } from './app/App.tsx';
+import { BrowserRouter } from 'react-router-dom';
+import { ThemeProvider } from './app/providers/ThemeProvider';
 
-createRoot(document.getElementById("root")!).render(
-  <BrowserRouter>
-    <ThemeProvider>
-      <App />
-    </ThemeProvider>
-  </BrowserRouter>
+createRoot(document.getElementById('root')!).render(
+    <BrowserRouter>
+        <ThemeProvider>
+            <App />
+        </ThemeProvider>
+    </BrowserRouter>,
 );
 
 // todo
 
 // todo later
-// configure linters and formatters
 // configure husky
 // i18n
