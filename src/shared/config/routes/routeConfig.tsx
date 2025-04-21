@@ -12,7 +12,7 @@ export enum RouteName {
 export const RoutePaths: Record<RouteName, string> = {
     [RouteName.MAIN]: '/',
     [RouteName.ABOUT]: '/about',
-    [RouteName.NOT_FOUND]: '/not_found',
+    [RouteName.NOT_FOUND]: '*',
 };
 
 export const routeConfig: Record<RouteName, RouteProps> = {
