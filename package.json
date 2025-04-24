@@ -10,7 +10,8 @@
         "preview": "vite preview",
         "unit": "jest",
         "format:check": "prettier --check src/**/*.{js,ts,tsx,jsx}",
-        "format:write": "prettier --write src/**/*.{js,ts,tsx,jsx}"
+        "format:write": "prettier --write src/**/*.{js,ts,tsx,jsx}",
+        "analyze": "vite-bundle-visualizer --config vite.config.ts"
     },
     "dependencies": {
         "blog": "file:",
@@ -37,6 +38,7 @@
         "typescript": "~5.7.2",
         "typescript-eslint": "^8.24.1",
         "vite": "^6.2.0",
+        "vite-bundle-visualizer": "^1.2.1",
         "vite-plugin-svgr": "^4.3.0"
     }
 }
