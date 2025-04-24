@@ -1,0 +1,15 @@
+.PageError { 
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+width: 100%;
+height: 100vh;
+}
+
+.errorText {
+    font-size: 30px;
+    color: red;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
