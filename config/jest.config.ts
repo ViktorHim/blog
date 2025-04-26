@@ -5,20 +5,23 @@ const config: Config = {
     preset: 'ts-jest',
     testEnvironment: 'jsdom',
     testPathIgnorePatterns: ['<rootDir>/node_modules/', '<rootDir>/dist/'],
-    setupFilesAfterEnv: ['<rootDir>/setupTests.ts'],
+    setupFilesAfterEnv: ['<rootDir>/config/setupTests.ts'],
     transform: {
         '^.+\\.tsx?$': [
             'ts-jest',
             {
-                tsconfig: 'tsconfig.app.json',
+                tsconfig: '<rootDir>/tsconfig.app.json',
                 diagnostics: false,
             },
         ],
     },
+    moduleNameMapper: {
+        '\\.(css|less|scss)$': 'identity-obj-proxy',
+    },
     moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
-    moduleDirectories: ['node_modules'],
+    moduleDirectories: ['../node_modules'],
     modulePaths: ['<rootDir>/src'],
-    rootDir: './',
+    rootDir: '../',
     testMatch: ['<rootDir>/src/**/*.test.{ts,tsx}'],
 };
 
