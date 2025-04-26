@@ -15,7 +15,6 @@ createRoot(document.getElementById('root')!).render(
 );
 
 // todo
-// configure husky
 
 // todo later
 // i18n

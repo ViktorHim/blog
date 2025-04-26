@@ -15,7 +15,8 @@
     "format:check": "prettier --check src/**/*.{js,ts,tsx,jsx,scss} --config config/.prettierrc",
     "format:write": "prettier --write src/**/*.{js,ts,tsx,jsx,scss} --config config/.prettierrc",
     "analyze": "vite-bundle-visualizer --config vite.config.ts",
-    "prepare": "husky install"
+    "prepare": "husky",
+    "precommit": "lint-staged"
   },
   "dependencies": {
     "blog": "file:",
@@ -58,15 +59,15 @@
     "vite-plugin-svgr": "^4.3.0"
   },
   "lint-staged": {
-    "**/*.{js,ts,tsx,jsx}": [
-      "eslint --fix",
-      "prettier --write"
+    "**/*.{ts,tsx}": [
+      "npm run lint",
+      "npm run format:write"
     ],
     "**/*.{css,scss}": [
-      "stylelint --fix",
-      "prettier --write"
+      "npm run style-lint:fix",
+      "npm run format:write"
     ],
-    "**/*.{js,ts,tsx}": [
+    "**/*.test.{ts,tsx}": [
       "npm run unit:precommit"
     ]
   }
