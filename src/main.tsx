@@ -6,7 +6,7 @@ import { ErrorBoundary } from 'app/providers/ErrorBoundary/index.ts';
 
 createRoot(document.getElementById('root')!).render(
     <ErrorBoundary>
-        <BrowserRouter>
+        <BrowserRouter future={{ v7_relativeSplatPath: true }}>
             <ThemeProvider>
                 <App />
             </ThemeProvider>

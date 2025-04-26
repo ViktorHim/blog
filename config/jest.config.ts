@@ -17,6 +17,7 @@ const config: Config = {
     },
     moduleNameMapper: {
         '\\.(css|less|scss)$': 'identity-obj-proxy',
+        '^.+\\.svg(\\?react)?$': '<rootDir>/config/__mocks__/svgMock.tsx',
     },
     moduleFileExtensions: ['ts', 'tsx', 'js', 'json'],
     moduleDirectories: ['../node_modules'],
