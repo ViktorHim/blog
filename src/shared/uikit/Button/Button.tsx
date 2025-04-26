@@ -16,6 +16,7 @@ export const Button = (props: ButtonProps) => {
     const { className, children, theme = ButtonTheme.CLEAR, ...otherProps } = props;
     return (
         <button
+            data-testid
             className={classNames(styles.Button, [className, styles[theme]])}
             {...otherProps}
         >

@@ -15,7 +15,6 @@ createRoot(document.getElementById('root')!).render(
 );
 
 // todo
-// configure stylelint
 // configure husky
 
 // todo later
